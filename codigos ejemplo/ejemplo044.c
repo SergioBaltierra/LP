@@ -4,13 +4,14 @@
 
 int main(){
 	int *puntero;
-	int arreglo[MAX]={1,2,3,4,5};
+	int arreglo[MAX]={3,1,5,2,4};
 	int i;
 
 	puntero=&arreglo[0];
 
-	for(i=0;i<MAX;i++)
-		printf("%d ",(*puntero)++);
-
+	for(i=0;i<MAX;i++){
+		printf("%d ",*puntero);
+		puntero++;
+	}
 	printf("\n");
 }
